@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+/* Bài tập về list */
+.list {
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid rgb(184, 184, 184);
+    width: 250px;
+    padding: 0px;
+    font-size: 20px;
+    background-color: rgb(250, 243, 243);
+}
+.list li{
+    border: 1px solid rgb(184, 184, 184);
+    padding: 10px;
+}
+.list li:hover{
+    background-color: #0056a6;
+    color: white;
+}
+.icons{
+    list-style-type: none;
+    padding: 0px;
+    margin-left: 10px;
+}
+.icons li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.icons li a{
+    color: black;
+    font-size: 30px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    text-align: center;
+    background-color: rgb(159, 159, 159);
+    border-radius: 50%;
+}
+.icons li a:hover{
+    background-color: rgb(152, 46, 0);
+    color: white;
+}
+/* Bài tạp về table */
+.table-1{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-spacing: 0;
+}
+.table-1 thead{
+    background-color: #01987a;
+    color: white;
+}
+.table-1 th, .table-1 td{
+    padding: 10px 20px;
+    text-align: left ;
+}
+.table-1 td{
+    border-bottom: 1px solid #ddd;
+}
+/* Bài tập về position và z-index */
+.menu{
+    background-color: #e25300;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.menu ul{
+    list-style-type: none;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px;
+}
+.menu ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+.bac0{
+    position: relative;
+    margin-top: 50px ;
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(39, 110, 216);
+    border-radius: 10px;
+}
+.bac{
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 20px;
+}
+.bac1-0{
+    background-color: #e25300;
+    top: 0;
+    left: 0;
+}
+.bac1-1{
+    background-color: #006b56;
+    top: 30px;
+    right: 40px;
+}
+.bac1-2{
+    background-color: #870053;
+    bottom: 50px ;
+    left: 5px;
+}
+.bac1-3{
+    background-color: #4a0074;
+    bottom: 100px ;
+    right: 30px;
+}
+.phone{
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+}
+.phone a{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(28, 135, 28);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50%;
+    z-index: 999;
+}
+.content{
+    background-color: #0065bc;
+    color: white;
+    font-size: 30px;
+    padding: 10px 80px;
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.content::first-letter{
+    font-size: 100px;
+}
+.content::first-line{
+    text-transform: uppercase;
+}
+.content::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #0000002d;
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    right: -30px;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: #0000002d;
+}
+.content .inner-content{
+    position: relative;
+    z-index: 1;
+}
